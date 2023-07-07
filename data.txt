@@ -1,0 +1,20 @@
+const data = [
+  { url: "bg1.jpg",
+    text: "Explore the latest fashion trends and discover a wide range of stylish clothing options for men, women, and children."
+},
+  { url: "bg2.jpg" ,
+    text: "Step up your footwear game with our wide selection of shoes for every occasion."
+},
+  { url: "bg3.jpg" ,
+    text: "Discover cutting-edge technology and gadgets that will enhance your daily life."
+},
+  { url: "bg4.jpg",
+    text: "Create a cozy and inviting space with our collection of home decor items."
+},
+  { url: "bg5.jpg",
+    text: "Stay active and fit with our range of sports and fitness gear."
+},
+  { url: "bg6.jpg",
+    text: "Indulge in self-care and beauty with our selection of skincare products, makeup, fragrances, and grooming essentials."
+}
+];

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e2e2;
+}
+
+.container{
+    height: 600px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-section{
+    height: 100%;
+    width: 80%;
+    background-color: lightcoral;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(to top right, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+    border-radius: 20px;
+}
+
+.text{
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+    color: #fff;
+    font-size: 40px;
+    width: 80%;
+    z-index: 3;
+}
+
+.btn{
+    position: absolute;
+    z-index: 3;
+    bottom: 10%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn button{
+    height: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.main-btn{
+    border: none;
+}
+
+.secondary-btn{
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.side-section{
+    height: 100%;
+    width: 18%;
+}
+
+.box{
+    width: 100%;
+    height: calc(100% / 6);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.box.active{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.overlay.active{
+    position: absolute;
+    height: 100%;
+    background-color: lightgray;
+    animation: overlay 3s linear infinite;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.box p{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%,-50%);
+    font-size: 20px;
+}
+
+@keyframes overlay{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
